@@ -1,0 +1,141 @@
+<LoginScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: [10, 10, 10, 10]
+        canvas.before:
+            Color:
+                rgba: 0.2, 0.6, 0.8, 1  # Light blue background
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: "Введите логин и пароль"
+            size_hint: (1, None)
+            height: 40
+            color: 0.1, 0.3, 0.7, 1  # Blue text
+
+        TextInput:
+            id: username_input
+            hint_text: "Логин"
+            size_hint: (1, None)
+            height: 50
+            background_color: 1, 1, 1, 0.8  # Transparent background
+            foreground_color: 0, 0, 0, 1
+
+        TextInput:
+            id: password_input
+            hint_text: "Пароль"
+            password: True
+            size_hint: (1, None)
+            height: 50
+            background_color: 1, 1, 1, 0.8
+            foreground_color: 0, 0, 0, 1
+
+        Button:
+            id: toggle_password_button
+            text: "Показать пароль"
+            size_hint: (1, None)
+            height: 50
+            on_press: root.toggle_password_visibility()
+
+        Button:
+            text: "Войти"
+            size_hint: (1, None)
+            height: 50
+            background_color: 0.1, 0.6, 0.4, 1  # Green button
+            on_press: root.verify_credentials()
+
+        Label:
+            id: status
+            text: ""
+            size_hint: (1, None)
+            height: 30
+            color: 1, 0, 0, 1  # Red error text
+
+        Button:
+            text: "Регистрация"
+            size_hint: (1, None)
+            height: 50
+            background_color: 0.2, 0.4, 0.8, 1  # Blue button
+            on_press: app.root.current = 'register'
+
+<RegisterScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: [10, 10, 10, 10]
+        canvas.before:
+            Color:
+                rgba: 0.8, 0.4, 0.2, 1  # Orange background
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: "Введите логин и пароль"
+            size_hint: (1, None)
+            height: 40
+            color: 1, 1, 1, 1
+
+        TextInput:
+            id: new_username
+            hint_text: "Логин"
+            size_hint: (1, None)
+            height: 50
+            background_color: 1, 1, 1, 0.8  # Transparent background
+            foreground_color: 0, 0, 0, 1
+
+        TextInput:
+            id: new_password
+            hint_text: "Пароль"
+            password: True
+            size_hint: (1, None)
+            height: 50
+            background_color: 1, 1, 1, 0.8
+            foreground_color: 0, 0, 0, 1
+
+        Button:
+            text: "Зарегистрироваться"
+            size_hint: (1, None)
+            height: 50
+            background_color: 0.1, 0.6, 0.4, 1  # Green button
+            on_press: root.register_user()
+
+        Button:
+            text: "Вернуться назад"
+            size_hint: (1, None)
+            height: 50
+            background_color: 0.6, 0.1, 0.1, 1  # Red button
+            on_press: app.root.current = 'login'
+
+<WelcomeScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: [10, 10, 10, 10]
+        canvas.before:
+            Color:
+                rgba: 0.1, 0.7, 0.2, 1  # Light green background
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            id: welcome_label
+            text: "Welcome!"
+            size_hint: (1, None)
+            height: 50
+            color: 1, 1, 1, 1  # White text
+
+        Image:
+            source: 'welcome.png'
+            size_hint: (1, 0.5)
+
+        Button:
+            text: "Выйти"
+            size_hint: (1, None)
+            height: 50
+            background_color: 1, 0.2, 0.2, 1  # Red logout button
+            on_press: root.logout()
