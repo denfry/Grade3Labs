@@ -1,2 +1,3 @@
-# Grade3Labs
-Labs of third grade at university
+# Тут собраны все лабы за 3 курс РГУ им. А.Н. Косыгина
+Предметы:
+
