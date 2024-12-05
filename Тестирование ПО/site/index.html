@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><span class="translate" data-en="Teen Courses Platform" data-ru="Платформа подростковых курсов">Teen Courses Platform</span></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><span class="translate" data-en="Teen Courses Platform" data-ru="Платформа подростковых курсов">Teen Courses Platform</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><span class="translate" data-en="Home" data-ru="Главная">Главная</span></a></li>
+                <li><a href="#courses"><span class="translate" data-en="Courses" data-ru="Курсы">Курсы</span></a></li>
+                <li><a href="#about"><span class="translate" data-en="About" data-ru="О нас">О нас</span></a></li>
+                <li><a href="#contact"><span class="translate" data-en="Contact" data-ru="Контакты">Контакты</span></a></li>
+                <li><a href="#faq"><span class="translate" data-en="FAQ" data-ru="Часто задаваемые вопросы">Часто задаваемые вопросы</span></a></li>
+            </ul>
+            <button id="theme-toggle"><span class="translate" data-en="Toggle Dark Mode" data-ru="Темная тема">Темная тема</span></button>
+        </nav>
+        <select id="language-selector">
+            <option value="en"><span class="translate" data-en="English" data-ru="English">English</span></option>
+            <option value="ru"><span class="translate" data-en="Russian" data-ru="Русский">Русский</span></option>
+        </select>
+    </header>
+
+    <section id="home">
+        <h2><span class="translate" data-en="Welcome to the Teen Courses platform" data-ru="Добро пожаловать на платформу Teen Courses">Welcome to the Teen Courses platform</span></h2>
+        <p><span class="translate" data-en="On the Teen Courses platform, we offer a variety of courses designed to help you acquire new skills in an engaging and interesting way. Whether you are interested in web development, graphic design, or other exciting areas, we have something for everyone." data-ru="На платформе Teen Courses мы предлагаем разнообразные курсы, призванные помочь вам приобрести новые навыки в увлекательной и интересной форме. Если вы интересуетесь веб-разработкой, графическим дизайном или другими интересными областями, у нас найдется что-то для каждого.">На платформе Teen Courses мы предлагаем разнообразные курсы, призванные помочь вам приобрести новые навыки в увлекательной и интересной форме. Если вы интересуетесь веб-разработкой, графическим дизайном или другими интересными областями, у нас найдется что-то для каждого.</span></p>
+        <p><span class="translate" data-en="Join us and take the first step towards your future today!" data-ru="Присоединяйтесь к нам и сделайте первый шаг к своему будущему уже сегодня!">Присоединяйтесь к нам и сделайте первый шаг к своему будущему уже сегодня!</span></p>
+        <button onclick="enrollNow()"><span class="translate" data-en="Enroll Now" data-ru="Записаться сейчас">Записаться сейчас</span></button>
+    </section>
+
+        <!-- Enrollment Modal -->
+        <div id="enroll-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('enroll-modal')">&times;</span>
+                <h3><span class="translate" data-en="Enrollment Form" data-ru="Форма регистрации">Форма регистрации</span></h3>
+                <form id="enrollment-form">
+                    <label for="student-name"><span class="translate" data-en="Name:" data-ru="Имя:">Имя:</span></label>
+                    <input type="text" id="student-name" required>
+                    <label for="student-email"><span class="translate" data-en="Email:" data-ru="Почта:">Почта:</span></label>
+                    <input type="email" id="student-email" required>
+                    <button type="submit"><span class="translate" data-en="Submit" data-ru="Отправить">Отправить</span></button>
+                </form>
+            </div>
+        </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirm-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('confirm-modal')">&times;</span>
+            <h3><span class="translate" data-en="Enrollment Confirmation" data-ru="Подтверждение регистрации">Подтверждение регистрации</span></h3>
+            <p><span class="translate" data-en="Thank you for enrolling!" data-ru="Спасибо за регистрацию!">Спасибо за регистрацию!</span></p>
+        </div>
+    </div>
+
+    <!-- Ask a Question Modal -->
+    <div id="ask-question-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ask-question-modal')">&times;</span>
+            <h3><span class="translate" data-en="Ask a Question" data-ru="Задать вопрос">Задать вопрос</span></h3>
+            <form id="question-form">
+                <label for="question-name"><span class="translate" data-en="Name:" data-ru="Имя:">Имя:</span></label>
+                <input type="text" id="question-name" required>
+                <label for="question-email"><span class="translate" data-en="Email:" data-ru="Почта:">Почта:</span></label>
+                <input type="email" id="question-email" required>
+                <label for="question-text"><span class="translate" data-en="Question:" data-ru="Вопрос:">Вопрос:</span></label>
+                <textarea id="question-text" required></textarea>
+                <button type="submit"><span class="translate" data-en="Submit" data-ru="Отправить">Отправить</span></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Question Submission Confirmation Modal -->
+    <div id="question-confirm-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('question-confirm-modal')">&times;</span>
+            <h3><span class="translate" data-en="Question Submitted" data-ru="Вопрос отправлен">Вопрос отправлен</span></h3>
+            <p><span class="translate" data-en="Thank you for your question!" data-ru="Спасибо за ваш вопрос!">Спасибо за ваш вопрос!</span></p>
+        </div>
+    </div>
+
+    <section id="courses">
+        <h2><span class="translate" data-en="Our Courses" data-ru="Наши курсы">Наши курсы</span></h2>
+        <div class="course-card">
+            <h3><span class="translate" data-en="Web Development" data-ru="Веб-разработка">Веб-разработка</span></h3>
+            <p><span class="translate" data-en="Learn the basics of web development and create your own websites." data-ru="Изучите основы веб-разработки и создавайте собственные сайты.">Изучите основы веб-разработки и создавайте собственные сайты.</span></p>
+            <a href="web-development.html"><span class="translate" data-en="Learn More" data-ru="Узнать больше">Узнать больше</span></a>
+        </div>
+        <div class="course-card">
+            <h3><span class="translate" data-en="Graphic Design" data-ru="Графический дизайн">Графический дизайн</span></h3>
+            <p><span class="translate" data-en="Discover the world of graphic design and bring your creativity to life." data-ru="Откройте для себя мир графического дизайна и воплотите в жизнь свои творческие способности.">Откройте для себя мир графического дизайна и воплотите в жизнь свои творческие способности.</span></p>
+            <a href="graphic-design.html"><span class="translate" data-en="Learn More" data-ru="Узнать больше">Узнать больше</span></a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2><span class="translate" data-en="About Us" data-ru="О нас">О нас</span></h2>
+        <p><span class="translate" data-en="Founded in 2023, Teen Courses Platform provides quality education for teenagers. Our team of experienced teachers aims to help you achieve your learning goals." data-ru="Основанная в 2023 году, компания Teen Courses Platform занимается предоставлением качественного образования подросткам. Наша команда опытных преподавателей стремится помочь вам достичь ваших целей в обучении.">Основанная в 2023 году, компания Teen Courses Platform занимается предоставлением качественного образования подросткам. Наша команда опытных преподавателей стремится помочь вам достичь ваших целей в обучении.</span></p>
+    </section>
+
+    <section id="contact">
+        <h2><span class="translate" data-en="Contact Us" data-ru="Контакты">Контакты</span></h2>
+        <p><span class="translate" data-en="Email: info@teencoursesplatform.com" data-ru="Почта: info@teencoursesplatform.com">Почта: info@teencoursesplatform.com</span></p>
+        <p><span class="translate" data-en="Phone: (123) 456-7890" data-ru="Телефон: (123) 456-7890">Телефон: (123) 456-7890</span></p>
+    </section>
+
+    <section id="faq">
+        <h2><span class="translate" data-en="FAQ" data-ru="Часто задаваемые вопросы">Часто задаваемые вопросы</span></h2>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)"><span class="translate" data-en="How do I enroll in a course?" data-ru="Как записаться на курс?">Как записаться на курс?</span></h3>
+            <p style="display:none;"><span class="translate" data-en="Just click the 'Enroll Now' button and follow the instructions." data-ru="Просто нажмите на кнопку «Записаться сейчас» и следуйте инструкциям.">Просто нажмите на кнопку «Записаться сейчас» и следуйте инструкциям.</span></p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)"><span class="translate" data-en="Are there any prerequisites for the courses?" data-ru="Есть ли какие-либо предварительные условия для прохождения курсов?">Есть ли какие-либо предварительные условия для прохождения курсов?</span></h3>
+            <p style="display:none;"><span class="translate" data-en="Check the course description to know specific requirements, but most courses are geared towards beginners." data-ru="Ознакомьтесь с описанием курса, чтобы узнать конкретные требования, но большинство курсов рассчитаны на новичков.">Ознакомьтесь с описанием курса, чтобы узнать конкретные требования, но большинство курсов рассчитаны на новичков.</span></p>
+        </div>
+        <button onclick="showModal('ask-question-modal')"><span class="translate" data-en="Ask a Question" data-ru="Задать вопрос">Задать вопрос</span></button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Teen Courses Platform. All rights reserved.</p>
+    </footer>
+
+    <!-- Include the script at the end of the body -->
+    <script src="script.js"></script>
+</body>
+</html>

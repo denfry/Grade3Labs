@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Курс по веб-разработке</title>
+    <meta name="description" content="Learn web development and build your own websites.">
+    <meta name="keywords" content="web development, course, HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Курс по веб-разработке</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="translate" data-en="Home" data-ru="Главная">Главная</span></a></li>
+                <li><a href="index.html#courses"><span class="translate" data-en="Courses" data-ru="Курсы">Курсы</span></a></li>
+                <li><a href="index.html#about"><span class="translate" data-en="About Us" data-ru="О нас">О нас</span></a></li>
+                <li><a href="index.html#contact"><span class="translate" data-en="Contact" data-ru="Контакты">Контакты</span></a></li>
+            </ul>
+            <button id="theme-toggle"><span class="translate" data-en="Toggle Dark Mode" data-ru="Темная тема">Темная тема</span></button>
+        </nav>
+		<select id="language-selector">
+			<option value="en">English</option>
+			<option value="ru">Русский</option>
+		</select>
+    </header>
+
+    <section>
+        <h2>Обзор курса</h2>
+        <p>Изучите основы веб-разработки и создавайте собственные сайты.</p>
+        <img src="images.jpg" alt="Description of the image">
+        <h3>What You'll Learn:</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Web Design Principles</li>
+        </ul>
+        <h3>Prerequisites:</h3>
+        <p>No prior experience needed.</p>
+        <h3>Duration:</h3>
+        <p>12 weeks</p>
+        <h3>Learning Outcomes:</h3>
+        <p>Build a fully functional website, understand web design basics, and prepare for a career in tech.</p>
+        <button onclick="enrollNow()">Enroll Now</button>
+    </section>
+
+       <!-- Enrollment Modal -->
+       <div id="enroll-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('enroll-modal')">&times;</span>
+            <h3><span class="translate" data-en="Enrollment Form" data-ru="Форма регистрации">Форма регистрации</span></h3>
+            <form id="enrollment-form">
+                <label for="student-name"><span class="translate" data-en="Name:" data-ru="Имя:">Имя:</span></label>
+                <input type="text" id="student-name" required>
+                <label for="student-email"><span class="translate" data-en="Email:" data-ru="Почта:">Почта:</span></label>
+                <input type="email" id="student-email" required>
+                <button type="submit"><span class="translate" data-en="Submit" data-ru="Отправить">Отправить</span></button>
+            </form>
+        </div>
+    </div>
+
+<!-- Confirmation Modal -->
+<div id="confirm-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('confirm-modal')">&times;</span>
+        <h3><span class="translate" data-en="Enrollment Confirmation" data-ru="Подтверждение регистрации">Подтверждение регистрации</span></h3>
+        <p><span class="translate" data-en="Thank you for enrolling!" data-ru="Спасибо за регистрацию!">Спасибо за регистрацию!</span></p>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2023 Teen Courses Platform. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
