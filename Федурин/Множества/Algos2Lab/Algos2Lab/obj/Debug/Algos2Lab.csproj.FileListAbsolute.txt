@@ -1,0 +1,16 @@
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\bin\Debug\Algos2Lab.exe.config
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\bin\Debug\Algos2Lab.exe
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\bin\Debug\Algos2Lab.pdb
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\Algos2Lab.csproj.AssemblyReference.cache
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\MainWindow.g.cs
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\App.g.cs
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\Algos2Lab_MarkupCompile.cache
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\Algos2Lab_MarkupCompile.lref
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\MainWindow.baml
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\Algos2Lab.g.resources
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\Algos2Lab.Properties.Resources.resources
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\Algos2Lab.csproj.GenerateResource.cache
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\Algos2Lab.csproj.CoreCompileInputs.cache
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\Algos2Lab.exe
+C:\Users\danii\source\repos\denfry\Algos2Lab\Algos2Lab\obj\Debug\Algos2Lab.pdb

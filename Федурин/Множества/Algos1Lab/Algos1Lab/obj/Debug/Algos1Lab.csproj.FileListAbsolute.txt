@@ -1,0 +1,15 @@
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\bin\Debug\Algos1Lab.exe.config
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\bin\Debug\Algos1Lab.exe
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\bin\Debug\Algos1Lab.pdb
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\Algos1Lab.csproj.AssemblyReference.cache
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\MainWindow.g.cs
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\App.g.cs
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\Algos1Lab_MarkupCompile.cache
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\Algos1Lab_MarkupCompile.lref
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\MainWindow.baml
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\Algos1Lab.g.resources
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\Algos1Lab.Properties.Resources.resources
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\Algos1Lab.csproj.GenerateResource.cache
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\Algos1Lab.csproj.CoreCompileInputs.cache
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\Algos1Lab.exe
+C:\Users\danii\source\repos\denfry\Algos1Lab\Algos1Lab\obj\Debug\Algos1Lab.pdb
