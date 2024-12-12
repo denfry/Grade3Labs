@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Стиль кнопки -->
+    <style name="CustomButton">
+        <item name="android:backgroundTint">@color/buttonColor</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Стиль поля ввода -->
+    <style name="CustomEditText">
+        <item name="android:backgroundTint">@color/primaryColor</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Стиль текста регистрации -->
+    <style name="CustomTextView">
+        <item name="android:textColor">@color/accentColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
