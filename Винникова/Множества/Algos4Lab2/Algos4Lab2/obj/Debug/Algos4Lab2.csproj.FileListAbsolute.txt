@@ -1,0 +1,14 @@
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\bin\Debug\Algos4Lab2.exe.config
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\bin\Debug\Algos4Lab2.exe
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\bin\Debug\Algos4Lab2.pdb
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\Algos4Lab2.csproj.AssemblyReference.cache
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\MainWindow.baml
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\MainWindow.g.cs
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\App.g.cs
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\Algos4Lab2_MarkupCompile.cache
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\Algos4Lab2.g.resources
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\Algos4Lab2.Properties.Resources.resources
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\Algos4Lab2.csproj.GenerateResource.cache
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\Algos4Lab2.csproj.CoreCompileInputs.cache
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\Algos4Lab2.exe
+D:\__VisualStudio\Algos4Lab2\Algos4Lab2\obj\Debug\Algos4Lab2.pdb
