@@ -1,0 +1,14 @@
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\bin\Debug\Algos4.exe.config
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\bin\Debug\Algos4.exe
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\bin\Debug\Algos4.pdb
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\Algos4Lab19.csproj.AssemblyReference.cache
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\MainWindow.baml
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\MainWindow.g.cs
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\App.g.cs
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\Algos4_MarkupCompile.cache
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\Algos4.g.resources
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\Algos4.Properties.Resources.resources
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\Algos4Lab19.csproj.GenerateResource.cache
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\Algos4Lab19.csproj.CoreCompileInputs.cache
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\Algos4.exe
+C:\Users\danii\source\repos\denfry\Algos4\Algos4\obj\Debug\Algos4.pdb
